@@ -1,5 +1,4 @@
 SELECT * FROM roles WHERE name='Software Engineer';
-2
 
 SELECT schools.id, schools.name, courses.name AS name, companies.name AS company, roles.name AS role FROM jobs 
 JOIN applicants ON applicants."jobId"=jobs.id 
