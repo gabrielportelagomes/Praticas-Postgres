@@ -1,21 +1,23 @@
+CREATE DATABASE "travelAgency"
+
 CREATE TABLE "airlines" (
-	"id" serial PRIMARY KEY,,
+	"id" SERIAL PRIMARY KEY,,
 	"abbreviation" TEXT NOT NULL,
 	"name" TEXT NOT NULL
 );
 
 CREATE TABLE "flights" (
-	"id" serial PRIMARY KEY,,
-	"airlineId" integer NOT NULL,
-	"leavinAirportId" integer NOT NULL,
-	"goingAirportId" integer NOT NULL,
+	"id" SERIAL PRIMARY KEY,,
+	"airlineId" INTEGER NOT NULL,
+	"leavinAirportId" INTEGER NOT NULL,
+	"goingAirportId" INTEGER NOT NULL,
 	"abbreviation" TEXT NOT NULL,
 	"departureTime" DATE NOT NULL,
 	"arrivalTime" DATE NOT NULL
 );
 
 CREATE TABLE "airports" (
-	"id" serial PRIMARY KEY,
+	"id" SERIAL PRIMARY KEY,
 	"abbreviation" TEXT NOT NULL,
 	"name" TEXT NOT NULL
 );
