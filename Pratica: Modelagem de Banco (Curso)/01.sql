@@ -1,4 +1,4 @@
- CREATE DATABASE curso;
+ CREATE DATABASE "course";
  
  CREATE TABLE "students" (
 	"id" SERIAL NOT NULL PRIMARY KEY,
